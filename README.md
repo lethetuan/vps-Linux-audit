@@ -2,7 +2,7 @@
 
 Một Bash script toàn diện để kiểm tra (audit) tính bảo mật và hiệu năng cho VPS (Virtual Private Server) của bạn. Công cụ này thực hiện nhiều kiểm tra bảo mật khác nhau và cung cấp báo cáo chi tiết kèm theo các khuyến nghị để cải thiện.
 
-**[nuverlabs.com/vps-audit](https://nuverlabs.com/vps-audit?ref=github)** · một dự án của [Nuver Labs](https://nuverlabs.com?ref=github)
+**[github.com/lethetuan/vps-Linux-audit](https://github.com/lethetuan/vps-Linux-audit)** · một dự án của [Le The Tuan](https://github.com/lethetuan/vps-Linux-audit)
 
 <!-- add a screenshot of the output here -->
 
@@ -178,10 +178,10 @@ Dự án này được cấp phép theo Giấy phép MIT - xem file LICENSE đ�
 
 ## Về dự án (About)
 
-vps-audit được phát triển và bảo trì bởi [Nuver Labs](https://nuverlabs.com?ref=github).
+vps-audit được phát triển và bảo trì bởi [Le The Tuan](https://github.com/lethetuan).
 
-- Trang dự án: [nuverlabs.com/vps-audit](https://nuverlabs.com/vps-audit?ref=github)
-- Tìm hiểu thêm các dự án khác: [github.com/nuver-labs](https://github.com/nuver-labs)
+- Trang dự án: [https://github.com/lethetuan/vps-Linux-audit](https://github.com/lethetuan/vps-Linux-audit)
+- Tìm hiểu thêm các dự án khác: [github.com/lethetuan](https://github.com/lethetuan)
 
 ## Lưu ý về Bảo mật (Security Notice)
 
