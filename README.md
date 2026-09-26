@@ -51,15 +51,17 @@ Một Bash script toàn diện để kiểm tra (audit) tính bảo mật và hi
 
 ## Cài đặt (Installation) và cách sử dụng script
 
-1. Tải script về:
+1. Tải script về bằng cách sử dụng câu lệnh wget hoặc curl dưới đây:
 
 ```bash
-wget https://raw.githubusercontent.com/lethetuan/vps-Linux-audit/refs/heads/main/vps-audit.shhttps://raw.githubusercontent.com/lethetuan/vps-Linux-audit/refs/heads/main/vps-audit.sh
+wget https://raw.githubusercontent.com/lethetuan/vps-Linux-audit/refs/heads/main/vps-audit.sh
+```
 # hoặc
+```bash
 curl -O https://raw.githubusercontent.com/lethetuan/vps-Linux-audit/refs/heads/main/vps-audit.sh
 ```
 
-2. Cấp quyền thực thi cho script:
+2. Dùng chmod để cấp quyền thực thi cho script:
 
 ```bash
 chmod +x vps-audit.sh
@@ -69,19 +71,19 @@ chmod +x vps-audit.sh
 
 ## Cách sử dụng (Usage)
 
-Chạy script với quyền `sudo`:
+Chạy script với quyền quản trị `sudo`:
 
 ```bash
 sudo ./vps-audit.sh
 ```
 
-Script này sẽ thực hiện các bước sau:
+Script này sẽ tự động thực hiện các bước sau để kiểm tra:
 
-1. Tiến hành tất cả các kiểm tra bảo mật
+1. Tiến hành tất cả các kiểm tra bảo mật trên máy chủ hệ điều hành Linux
 2. Hiển thị kết quả theo thời gian thực (real-time) với mã màu:
-   - 🟢 [PASS] - Kiểm tra đạt yêu cầu
-   - 🟡 [WARN] - Phát hiện vấn đề tiềm ẩn
-   - 🔴 [FAIL] - Phát hiện lỗi/nguy cơ nghiêm trọng
+   - 🟢 [ĐẠT] - Kiểm tra đạt yêu cầu
+   - 🟡 [CẢNH BÁO] - Phát hiện vấn đề tiềm ẩn có thể bỏ qua nếu bạn đã hiểu hệ thống
+   - 🔴 [LỖI] - Phát hiện lỗi/nguy cơ nghiêm trọng cần kiểm tra khẩn cấp
 3. Tạo file báo cáo chi tiết: `vps-audit-report-[TIMESTAMP].txt`
 
 ## Định dạng Báo cáo Output (Output Format)
@@ -153,10 +155,10 @@ Bạn có thể điều chỉnh đường dẫn các file cấu hình quan trọ
 
 ## Khuyên dùng (Best Practices)
 
-1. Chạy audit thường xuyên (ví dụ: hàng tuần) để duy trì tính an toàn bảo mật
+1. Chạy script audit thường xuyên (ví dụ: hàng tuần) để duy trì tính an toàn bảo mật
 2. Đọc kỹ file báo cáo được tạo ra
-3. Xử lý các trạng thái **FAIL** ngay lập tức
-4. Điều tra các cảnh báo **WARN** trong các đợt bảo trì
+3. Xử lý các trạng thái **LỖI** ngay lập tức
+4. Điều tra các cảnh báo **CẢNH BÁO** trong các đợt bảo trì
 5. Cập nhật script thường xuyên sao cho phù hợp với chính sách bảo mật của bạn
 
 ## Hạn chế (Limitations)
@@ -200,4 +202,4 @@ Mặc dù script này giúp phát hiện các vấn đề bảo mật phổ bi�
 2. Tạo issue mới kèm thông tin chi tiết
 3. Cung cấp kết quả output của script cùng thông tin hệ thống của bạn
 
-Chúc hệ thống của bạn luôn an toàn! 🔒
+Chúc hệ thống của bạn luôn uptime an toàn! 🔒
