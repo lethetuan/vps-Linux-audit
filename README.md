@@ -49,14 +49,14 @@ Một Bash script toàn diện để kiểm tra (audit) tính bảo mật và hi
 
 ---
 
-## Cài đặt (Installation)
+## Cài đặt (Installation) và cách sử dụng script
 
 1. Tải script về:
 
 ```bash
-wget https://raw.githubusercontent.com/Nuver-Labs/vps-audit/main/vps-audit.sh
+wget https://raw.githubusercontent.com/lethetuan/vps-Linux-audit/refs/heads/main/vps-audit.shhttps://raw.githubusercontent.com/lethetuan/vps-Linux-audit/refs/heads/main/vps-audit.sh
 # hoặc
-curl -O https://raw.githubusercontent.com/Nuver-Labs/vps-audit/main/vps-audit.sh
+curl -O https://raw.githubusercontent.com/lethetuan/vps-Linux-audit/refs/heads/main/vps-audit.sh
 ```
 
 2. Cấp quyền thực thi cho script:
@@ -75,7 +75,7 @@ Chạy script với quyền `sudo`:
 sudo ./vps-audit.sh
 ```
 
-Script sẽ thực hiện:
+Script này sẽ thực hiện các bước sau:
 
 1. Tiến hành tất cả các kiểm tra bảo mật
 2. Hiển thị kết quả theo thời gian thực (real-time) với mã màu:
@@ -86,7 +86,7 @@ Script sẽ thực hiện:
 
 ## Định dạng Báo cáo Output (Output Format)
 
-Script cung cấp hai dạng output:
+Script cung cấp hai dạng output để báo cáo kết quả audit:
 
 1. Output thời gian thực trên console có mã màu:
 
